@@ -21,10 +21,9 @@ class TextNode:
             and self.url == other.url
         )
     def __repr__(self):
-        return f"TextNode({self.text}, {self.text_type.value}, {self.url})"
+        return f"TextNode({self.text}, {self.text_type}, {self.url})"
 
 def text_node_to_html_node(text_node):
-    print(text_node.text_type)
     match text_node.text_type:
         case TextType.TEXT:
             return LeafNode(None, text_node.text)
