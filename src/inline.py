@@ -41,10 +41,38 @@ def split_nodes_image(old_nodes):
         #no links present
         if len(links) == 0:
             new_nodes.append(onode)
+        # links are present
+        # spliting using links list
+        for link in links:
+            # create a loop for processing string with multiple links
+            first, second = onode.text.split(f"{link[0]}{link[1]}",2)
+            #append text
+            new_nodes.append(TextNode(text=first, text_type=TextType.TEXT))
+            #append link
+            new_nodes.append(TextNode(text=link[0], text_type=TextType.LINK), url=link[1])
 
 
 
-    return
+
+
+    return new_nodes
 
 def split_nodes_link(old_nodes):
     return
+
+node = TextNode(
+    "This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)",
+    TextType.TEXT,
+)
+new_nodes = split_nodes_link([node])
+# [
+#     TextNode("This is text with a link ", TextType.TEXT),
+#     TextNode("to boot dev", TextType.LINK, "https://www.boot.dev"),
+#     TextNode(" and ", TextType.TEXT),
+#     TextNode(
+#         "to youtube", TextType.LINK, "https://www.youtube.com/@bootdotdev"
+#     ),
+# ]
+
+
+print(new_nodes)
