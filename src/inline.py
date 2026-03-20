@@ -30,49 +30,79 @@ def extract_markdown_links(text):
     matches = re.findall(r"\[(.*?)\]\((.*?)\)", text)
     return matches
 
-def split_nodes_image(old_nodes):
+def split_nodes_link(old_nodes):
     new_nodes = []
     for onode in old_nodes:
         #This is not a string
         if onode.text_type != TextType.TEXT:
-            continue
+            new_nodes.append(onode)
         #extract links from nodes
-        links = extract_markdown_images(onode)
+        links = extract_markdown_links(onode.text)
         #no links present
         if len(links) == 0:
             new_nodes.append(onode)
         # links are present
         # spliting using links list
+        text_to_process = onode.text
         for link in links:
             # create a loop for processing string with multiple links
-            first, second = onode.text.split(f"{link[0]}{link[1]}",2)
+            pattern = f"![{link[0]}]({link[1]})"
+            splitted = text_to_process.split(pattern,2)
+
             #append text
-            new_nodes.append(TextNode(text=first, text_type=TextType.TEXT))
+            if splitted[0] != "":
+                new_nodes.append(TextNode(text=splitted[0], text_type=TextType.TEXT))
             #append link
-            new_nodes.append(TextNode(text=link[0], text_type=TextType.LINK), url=link[1])
-
-
-
-
-
+            new_nodes.append(TextNode(text=link[0], text_type=TextType.LINK, url=link[1]))
+            print(len(splitted))
+            if len(splitted) > 1:
+                text_to_process = splitted[1]
+            else:
+                text_to_process = ""
+        if text_to_process != "":
+            new_nodes.append(TextNode(text_to_process, TextType.TEXT))
     return new_nodes
 
-def split_nodes_link(old_nodes):
-    return
+def split_nodes_image(old_nodes):
+    new_nodes = []
+    for onode in old_nodes:
+        #This is not a string
+        if onode.text_type != TextType.TEXT:
+            new_nodes.append(onode)
+        #extract links from nodes
+        images = extract_markdown_images(onode.text)
+        #no links present
+        if len(images) == 0:
+            new_nodes.append(onode)
+        # links are present
+        # spliting using links list
+        text_to_process = onode.text
+        for image in images:
+            # create a loop for processing string with multiple links
+            pattern = f"![{image[0]}]({image[1]})"
+            splitted = text_to_process.split(pattern,1)
+            #append text
+            if splitted[0] != "":
+                new_nodes.append(TextNode(text=splitted[0], text_type=TextType.TEXT))
+            #append link
+            new_nodes.append(TextNode(text=image[0], text_type=TextType.IMAGE, url=image[1]))
+            if len(splitted) > 1:
+                text_to_process = splitted[1]
+            else:
+                text_to_process = ""
+        if text_to_process != "":
+            new_nodes.append(TextNode(text_to_process, TextType.TEXT))
+    return new_nodes
+
 
 node = TextNode(
     "This is text with a link [to boot dev](https://www.boot.dev) and [to youtube](https://www.youtube.com/@bootdotdev)",
     TextType.TEXT,
 )
 new_nodes = split_nodes_link([node])
-# [
-#     TextNode("This is text with a link ", TextType.TEXT),
-#     TextNode("to boot dev", TextType.LINK, "https://www.boot.dev"),
-#     TextNode(" and ", TextType.TEXT),
-#     TextNode(
-#         "to youtube", TextType.LINK, "https://www.youtube.com/@bootdotdev"
-#     ),
-# ]
-
-
 print(new_nodes)
+#self.assertListEqual(new_nodes,
+#                     [TextNode("This is text with a link ", TextType.TEXT),
+#                      TextNode("to boot dev", TextType.LINK, "https://www.boot.dev"),
+#                      TextNode(" and ", TextType.TEXT),
+#                      TextNode("to youtube", TextType.LINK, "https://www.youtube.com/@bootdotdev"), ])
