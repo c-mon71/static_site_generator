@@ -1,5 +1,7 @@
 from enum import Enum
-from src.htmlnode import HTMLNode
+from src.htmlnode import HTMLNode, ParentNode
+from src.inline import text_to_textnodes
+from src.textnode import text_node_to_html_node
 
 class BlockType(Enum):
     PARAGRAPH      = "paragraph"
@@ -43,8 +45,14 @@ def block_to_block_type(block):
 
 def markdown_to_html_node(markdown):
     blocks = markdown_to_blocks(markdown)
-    #RootNode = HTMLNode(None, None, None, None)
-    return blocks
+    text_nodes = []
+    md_parent = ParentNode("html",None, None)
+    for block in blocks:
+        text_node = text_to_textnodes(block)
+        text_nodes.append(text_node)
+    for text_node in text_nodes:
+        print(f"Text node: {text_node}")
+    return text_nodes
 
 def block2heading(block):
     count = len(block) - len(block.lstrip("#"))
@@ -58,4 +66,4 @@ tag here
 This is another paragraph with _italic_ text and `code` here
 
 """
-print(markdown_to_html_node(md))
+markdown_to_html_node(md)
