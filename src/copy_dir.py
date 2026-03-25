@@ -39,19 +39,12 @@ def remove_files_at_dest(dest, logfile):
     
     return 0  
 
-def copy_files_to_destination(src, dest, logfile):
+def copy_files_to_dest(src, dest, logfile):
     list_of_objects = listdir(src)
     
     print(list_of_objects)
     for list in list_of_objects:
-        dir_path = Path(list)
-
- """       if dir_path.is_dir():
-            makedirs()
-        elif dir_path.exists():
-            print("It exists, but it's likely a file.")
-        else:
-            print("Path does not exist.")"""
+        dir_path = path(list)
 
 
 def copy_dir(source, destination, logfile):
