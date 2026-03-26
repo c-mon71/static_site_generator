@@ -275,3 +275,7 @@
 2026-03-26 19:57:16.480331 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
 2026-03-26 19:57:16.481412 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
 2026-03-26 19:57:16.482466 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 21:01:18.832194 /static_site_generator/static does not exist
+2026-03-26 21:04:30.893509 /static_site_generator//static does not exist
+2026-03-26 21:04:53.304693 /static_site_generator/static does not exist
+2026-03-26 21:06:13.660223 ./static_site_generator/static does not exist
