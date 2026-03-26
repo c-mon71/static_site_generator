@@ -6,10 +6,10 @@ from copy_dir import copy_dir
 from generate_page import generate_pages
 
 def main():
-    if sys.argv[1]:
+    if len(sys.argv) > 1:
         prefix = "."+sys.argv[1]
     else:
-        prefix = "/"
+        prefix = "./"
     print(f"prefix: {prefix}")
     #prefix = "/Users/simonv/Documents/GitHub_c-mon71/static_site_generator"
     copy_dir(f"{prefix}static", f"{prefix}docs", "copy_dir.log")

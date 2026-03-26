@@ -279,3 +279,15 @@
 2026-03-26 21:04:30.893509 /static_site_generator//static does not exist
 2026-03-26 21:04:53.304693 /static_site_generator/static does not exist
 2026-03-26 21:06:13.660223 ./static_site_generator/static does not exist
+2026-03-26 21:15:09.822106 /static does not exist
+2026-03-26 21:15:21.026222 /static does not exist
+2026-03-26 21:16:29.852873 Deleted existing directory ./docs successfully.
+2026-03-26 21:16:29.958160 Created directory ./docs successfully.
+2026-03-26 21:16:29.958307 copy from ./static/.DS_Store to ./docs/.DS_Store
+2026-03-26 21:16:29.959928 makedir ./docs/images
+2026-03-26 21:16:29.960038 copy from ./static/images/rivendell.png to ./docs/images/rivendell.png
+2026-03-26 21:16:29.963029 copy from ./static/images/tolkien.png to ./docs/images/tolkien.png
+2026-03-26 21:16:29.966031 copy from ./static/images/tom.png to ./docs/images/tom.png
+2026-03-26 21:16:29.968638 copy from ./static/images/glorfindel.png to ./docs/images/glorfindel.png
+2026-03-26 21:16:29.970463 copy from ./static/index.css to ./docs/index.css
+2026-03-26 21:16:46.647496 ./static_site_generator/static does not exist

@@ -14,14 +14,17 @@ def generate_page(prefix, from_path, template_path, dest_path):
     print(f"Generating page from {from_path} to {dest_path} using {template_path}")
     with open(from_path) as md_file:
         md_text = md_file.read()
-    with open(template_path) as template_file:
+    with open(f"{prefix}{template_path}") as template_file:
         template = template_file.read()
     node = markdown_to_html_node(md_text)
     html = node.to_html()
     title = extract_title(md_text)
     template = template.replace("{{ Title }}", title)
     template = template.replace("{{ Content }}", html)
-    template = template.replace("/href", f"{prefix}href")
+    #print(template.find('href="/'))
+    template = template.replace('href="/', f'href="{prefix[1:]}')
+
+    #print(f"Prefix: {prefix}href")
     with open(dest_path, "w") as html_file:
         html_file.write(template)
     return
