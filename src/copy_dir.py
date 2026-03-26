@@ -41,11 +41,14 @@ def remove_files_at_dest(dest, logfile):
 
 def copy_files_to_dest(src, dest, logfile):
     list_of_objects = listdir(src)
-    
-    print(list_of_objects)
-    for list in list_of_objects:
-        dir_path = path(list)
-
+    for obj in list_of_objects:
+        if path.isdir(f"{src}/{obj}"):
+            makedirs(f"{dest}/{obj}")
+            write_to_log(logfile, f"makedir {dest}/{obj}")
+            copy_files_to_dest(f"{src}/{obj}",f"{dest}/{obj}", logfile )
+        else:
+            write_to_log(logfile, f"copy from {src}/{obj} to {dest}/{obj}")
+            shutil.copy(f"{src}/{obj}",f"{dest}/{obj}")
 
 def copy_dir(source, destination, logfile):
     with open("copy_dir.log", "a") as f:
@@ -63,5 +66,3 @@ def copy_dir(source, destination, logfile):
         copy_files_to_dest(source, destination, f)
 
     return
-
-copy_dir("./static", "./public", "copy_dir.log")
