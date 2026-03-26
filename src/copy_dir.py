@@ -56,11 +56,11 @@ def copy_dir(source, destination, logfile):
         if not f:
             raise RuntimeError (f"Problem accessing {logfile}. Exiting...")
         if not path.exists(source):
-            write_to_log(f, f"{source} does not exsist")
-            raise FileNotFoundError (f"{source} does not exsist. Exiting..." )
+            write_to_log(f, f"{source} does not exist")
+            raise FileNotFoundError (f"{source} does not exist. Exiting..." )
         if not path.exists(destination):
-            write_to_log(f, f"{source} {destination} does not exsist")
-            raise FileNotFoundError(f"{destination} does not exsist. Exiting...")
+            write_to_log(f, f"{source} {destination} does not exist")
+            raise FileNotFoundError(f"{destination} does not exist. Exiting...")
         
         remove_files_at_dest(destination, f)
         copy_files_to_dest(source, destination, f)
