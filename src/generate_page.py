@@ -23,8 +23,7 @@ def generate_page(prefix, from_path, template_path, dest_path):
     template = template.replace("{{ Content }}", html)
     #print(template.find('href="/'))
     template = template.replace('href="/', f'href="{prefix[1:]}')
-
-    #print(f"Prefix: {prefix}href")
+    template = template.replace('src="/', f'src="{prefix[1:]}')
     with open(dest_path, "w") as html_file:
         html_file.write(template)
     return
