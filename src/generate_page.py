@@ -4,10 +4,11 @@ from copy_dir import write_to_log
 from os import(
     path,
     makedirs,
-    listdir,
-    getcwd
+    listdir
 )
 def generate_page(from_path, template_path, dest_path):
+    if not from_path.endswith(".md"):
+        return
     print(f"Generating page from {from_path} to {dest_path} using {template_path}")
     with open(from_path) as md_file:
         md_text = md_file.read()
@@ -31,9 +32,10 @@ def generate_pages(from_path, template_path, dest_path):
             generate_pages(f"{from_path}/{obj}",template_path, f"{dest_path}/{obj}")
         else:
             # write_to_log(logfile, f"generate from {from_path}/{obj} to {from_path}/{obj}")
-            generate_page(f"{from_path}/{obj}",template_path,f"{dest_path}/{obj}")
+            out_obj=obj.replace(".md", ".html")
+            generate_page(f"{from_path}/{obj}",template_path,f"{dest_path}/{out_obj}")
     return
 
 #print(getcwd())
-prefix = "C:/Users/svidmar/Lokalni dokumenti/static_site_generator/"
-generate_pages(f"{prefix}/content", f"{prefix}/template.html", f"{prefix}/public")
+#prefix = "/Users/simonv/Documents/GitHub_c-mon71/static_site_generator"
+#generate_pages(f"{prefix}/content", f"{prefix}/template.html", f"{prefix}/public")
