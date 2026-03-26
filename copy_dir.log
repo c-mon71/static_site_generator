@@ -1,6 +1,6 @@
-2026-03-25 15:07:33.141466 Deleted existing directory ./public successfully.
 2026-03-25 15:07:33.242586 Created directory ./public successfully.
 2026-03-25 20:02:59.993421 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public successfully.
+2026-03-25 15:07:33.141466 Deleted existing directory ./public successfully.
 2026-03-25 20:03:00.098893 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public successfully.
 2026-03-25 20:03:00.099057 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public/.DS_Store
 2026-03-25 20:03:00.102055 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public/images
@@ -186,3 +186,83 @@
 2026-03-26 18:57:29.048631 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public/images/tom.png
 2026-03-26 18:57:29.051958 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public/images/glorfindel.png
 2026-03-26 18:57:29.057457 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/public/index.css
+2026-03-26 19:20:17.589042 src/main.py/static does not exist
+2026-03-26 19:22:42.113395 src/main.py/static does not exist
+2026-03-26 19:24:27.511692 src/main.py/static does not exist
+2026-03-26 19:30:30.419932 //static does not exist
+2026-03-26 19:30:58.492325 /static does not exist
+2026-03-26 19:34:26.626822 ./static ./docs does not exist
+2026-03-26 19:35:55.898014 /Users/simonv/Documents/GitHub_c-mon71/static_site_generatorstatic does not exist
+2026-03-26 19:36:30.687763 /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs does not exist
+2026-03-26 19:38:22.804034 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:38:22.909450 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:38:22.909633 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:38:22.911515 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:38:22.911631 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:38:22.914126 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:38:22.916290 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:38:22.917473 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:38:22.918854 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:41:16.803368 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:41:16.908987 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:41:16.909183 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:41:16.911108 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:41:16.911220 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:41:16.913404 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:41:16.916039 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:41:16.918040 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:41:16.919164 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:42:44.407598 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:42:44.512955 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:42:44.513124 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:42:44.515037 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:42:44.515159 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:42:44.517834 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:42:44.520110 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:42:44.521283 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:42:44.522283 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:44:22.380771 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:44:22.486055 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:44:22.486187 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:44:22.488433 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:44:22.488550 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:44:22.490804 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:44:22.494277 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:44:22.496381 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:44:22.497498 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:46:16.368890 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:46:16.474183 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:46:16.474342 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:46:16.475348 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:46:16.475463 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:46:16.477867 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:46:16.479045 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:46:16.480160 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:46:16.481205 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:48:25.368184 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:48:25.473783 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:48:25.473954 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:48:25.475677 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:48:25.475794 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:48:25.477958 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:48:25.480171 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:48:25.483998 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:48:25.484954 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:50:38.341466 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:50:38.447166 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:50:38.447420 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:50:38.448581 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:50:38.448686 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:50:38.450527 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:50:38.451686 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:50:38.452749 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:50:38.453822 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
+2026-03-26 19:51:07.860501 Deleted existing directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:51:07.965922 Created directory /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs successfully.
+2026-03-26 19:51:07.966158 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/.DS_Store to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/.DS_Store
+2026-03-26 19:51:07.967465 makedir /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images
+2026-03-26 19:51:07.967585 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/rivendell.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/rivendell.png
+2026-03-26 19:51:07.969672 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tolkien.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tolkien.png
+2026-03-26 19:51:07.970915 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/tom.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/tom.png
+2026-03-26 19:51:07.972035 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/images/glorfindel.png to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/images/glorfindel.png
+2026-03-26 19:51:07.973060 copy from /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/static/index.css to /Users/simonv/Documents/GitHub_c-mon71/static_site_generator/docs/index.css
